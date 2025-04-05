@@ -1,0 +1,73 @@
+.ourstores {
+    display: block;
+    width: 100%;
+}
+
+/* .ourstores h3 {
+    background-color: rgb(247, 246, 244);
+    text-align: left;
+    width: 100vw;
+    padding: 40px 0;
+} */
+
+
+.aboutUsSpace {
+    width: 50%;
+    height: 400px;
+    display: inline-block;
+}
+
+.aboutUsSpace.white {
+    background-size: cover;
+
+
+}
+
+.aboutUsSpace.brown {
+    background-color: white;
+}
+
+.aboutUsSpace.x {
+    float: left;
+}
+
+.aboutUsSpace.y {
+    float: right;
+}
+
+.location {
+    display: block;
+    
+}
+
+.locations {
+    height: 200px;
+    padding: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.locations h5 {
+    padding: 10px;
+}
+
+.locations h2 {
+    padding-bottom: 10px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: none;
+}

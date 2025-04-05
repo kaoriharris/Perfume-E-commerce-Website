@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dès Vu</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/3dstyle.css">
+    <script src="JS/script.js"></script>
+    <!-- connect to get icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- 3d model -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- RIBBON -->
+        <nav class="top-ribbon">
+            <div>Haven't discovered your personal scent yet? <a href="#"><b>Take quiz here!</b></a></i></div>
+        </nav>
+
+        <!-- MAIN NAVBAR -->
+        <nav class="navbar flex">
+
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+                <ul>
+                    <li onclick=hideSidebar()> <a href="#"><i class='bx bx-x sideIcons'></i></a> </li>
+                    <li> </li>
+                    <li> <a href="home.html" class="flex">HOME <i class='bx bx-chevron-right sideIcons'></i> </a></li>
+                    <li> <a href="products.html" class="flex">SHOP <i class='bx bx-chevron-right sideIcons'></i> </a></li>
+                    <li> <a href="#" class="flex">SEASONS<i class='bx bx-chevron-right sideIcons'></i> </a></li>
+                    <li> <a href="#" class="flex">CATALOGUE BOOK <i class='bx bx-chevron-right sideIcons'></i> </a></li>
+                </ul>
+            </div>
+
+            <!-- NAVBAR -->
+            <ul class="left-menu flex">
+                <li onclick=showSidebar()> <a href="#"><i class='bx bx-menu'></i></a> </li>
+            </ul>
+        
+            <div class="logo">
+                <img src="IMG/smallLogo.png">
+            </div>
+
+            <ul class="right-menu flex">
+                <li> <a href="#"><i class='bx bx-user'></i></a> </li>
+                <li onclick=showCart()> 
+                    <a href="#" class="cart-logo">
+                        <i class='bx bx-cart'></i>
+                        <span>0</span>
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+
+        <!-- SECTION 1 -->
+        <div class="one">
+            <div id="perfume">
+                <model-viewer
+                    camera-orbit="calc(-1.5rad + env(window-scroll-y) * 20rad) 
+                    85deg 
+                    calc(10m - env(window-scroll-y) * 10m)"
+                    orientation="0deg 0deg 50deg"
+                    alt="3d perfume" 
+                    src="3dmodel/scene.glb"
+                ></model-viewer>
+            </div>
+            <div class="frontBanner"></div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="two">
+            <p class="paragraph">a very long paragraph a very long paragraph a very long paragraph a very long paragraph a very long paragraph a very long paragraph </p>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="three">
+            <div class="products flex">
+                <div class="product1"></div>
+                <div class="product2"></div>
+            </div>
+            <div class="productCaption">
+                <p class="smallText">Products</p>
+                <br>
+                <p class="normalText">OUR PERFUMES</p>
+                <br>
+                <button class="buttons">Discover</button>
+            </div>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="four">
+            <div class="flex">
+                <div>
+                    <div class="normalText">ABOUT US</div>
+                    <div class="aboutParagraph">sgsd liksdfv iosdjv oisdv osdikvj sodijv sodinv sdoiuvh sdoijvnsdoknvmsod ivhjsodifj dsa sdjv oisdv osdikvj sodijv sodinv sdoiuvh sdoijvnsdoknvmsod ivhjsodifj dsaikj</div>
+                    <button class="buttons">Discover</button>
+                </div>
+                
+                <div class="aboutPic"></div>
+            </div>
+        </div>
+
+        <!-- SECTION 5 -->
+        <div class="five">
+            <div class="collage">
+                <img class="collage-row-2" src="IMG/image1.jpeg">
+                <img src="IMG/image3.jpeg">
+                <img class="collage-row-2" src="IMG/image2.jpeg">
+                <img src="IMG/image4.jpeg">
+                <!-- can modify -->
+            </div>
+        </div>
+
+        <!-- SECTION 6 -->
+        <div class="six">
+            <p class="smallText">Categories</p>
+            <br>
+            <p class="normalText">FRAGRANCE FAMILIES</p>
+            <div class="scents flex ">
+                <div class="scentCat">
+                    <img src="IMG/amber.jpg">
+                    <p class="normalText scentName">Scent name</p>
+                </div>
+
+                <div class="scentCat">
+                    <img src="IMG/aquatic.jpg">
+                    <p class="normalText scentName">Scent name</p>
+                </div>
+
+                <div class="scentCat">
+                    <img src="IMG/fruity.jpg">
+                    <p class="normalText scentName">Scent name</p>
+                </div>
+
+                <div class="scentCat">
+                    <img src="IMG/woody.jpeg">
+                    <p class="normalText scentName">Scent name</p>
+                </div>
+
+                <div class="scentCat">
+                    <img src="IMG/woody.jpeg">
+                    <p class="normalText scentName">Scent name</p>
+                </div>
+            </div>
+
+            
+            <p class="paragraph">a very long paragraph a very long paragraph a very long paragraph a very long paragraph a very long paragraph a very long paragraph </p>
+            <button class="buttons">Discover</button>
+
+            <div class="takequiz">
+                <p class="normalText">FIND YOUR PERSONAL SCENT</p>
+                <br>
+                <button class="buttons">Take quiz</button>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-container">
+
+                <!-- COLUMN 1 -->
+                <div class="logoSocials">
+                    <div class="cirlce-logo">
+                        <img src="IMG/circleLogo.png">
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+                
+                <!-- COLUMN 2 -->
+                <div class="footer-content">
+                    <h4>SERVICES</h4>
+                    <li><a href="#">Contact Mngmt.</a></li>
+                    <li><a href="#">Delivery service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="footer-content">
+                    <h4>SUPPORT US</h4>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Promote us</a></li>
+                    <li><a href="#">Ambassadors</a></li>
+                </div>
+                
+                <!-- COLUMN 4 -->
+                <div class="footer-content">
+                    <h4>HOUSE OF DES VU</h4>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </div>
+
+                <!-- COLUMN 5 -->
+                <div class="footer-content">
+                    <h3>Thank You</h3>
+                    <h3 id="secondLine">for having us,</h3>
+                    <h1 class="thankyou">Des Vu</h1>
+                </div>
+            </div>
+        
+            <!-- BOTTOM RIBBON -->
+            <div class="line"></div>
+            <div class="bottom-ribbon">
+                <img src="IMG/bigLogo.png" class="bottomLogo">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CART -->
+    <div class="cart">
+        <div class="close">
+            <!-- <i onclick=closeCart() class='bx bx-x'></i> -->
+            <div onclick=closeCart() class="smallText">Close cart >></div>
+        </div>
+
+
+        <div class="cart-list">
+            <div class="item-in-cart">
+
+                <div class="item">
+                    <div class="item-name-and-price flex">
+                        <h4>Athalia</h4>
+                        <h3>$499.0</h3>
+                    </div>
+                    <div class="item-thumbnail">
+                        <img src="IMG/parfum.jpg">
+                    </div>
+                    <div class="item-qty flex">
+                        <i class='bx bx-minus'></i>
+                        <div class="qty">0</div>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    
+                </div>
+            
+                <div class="item">
+                    <div class="item-name-and-price flex">
+                        <h4>Athalia</h4>
+                        <h3>$499.0</h3>
+                    </div>
+                    <div class="item-thumbnail">
+                        <img src="IMG/parfum.jpg">
+                    </div>
+                    <div class="item-qty flex">
+                        <i class='bx bx-minus'></i>
+                        <div class="qty">0</div>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-name-and-price flex">
+                        <h4>Athalia</h4>
+                        <h3>$499.0</h3>
+                    </div>
+                    <div class="item-thumbnail">
+                        <img src="IMG/parfum.jpg">
+                    </div>
+                    <div class="item-qty flex">
+                        <i class='bx bx-minus'></i>
+                        <div class="qty">0</div>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="check-out">
+            <a href="#">Check out</a>
+        </div>  
+
+        <!-- <div onclick=hideCart()> <a href="#"><i class='bx bx-x'></i></a> </div>
+
+        <div class="cart-item">
+            <img src="">
+            <div class="cart-item-desc">
+                <p>Item Name</p>
+                <div></div>
+            </div>
+        </div> -->
+        
+    </div>
+
+
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="CSS/prodDetail.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
+    
+</head>
+<body>
+
+
+    <div class="product-detail-container">
+
+        <div class="left-pd">
+            <div class="pic-container">
+                <div id="slide">
+                    <div class="item" style="background-image: url(IMG/right.jpg);"></div>
+                    <div class="item" style="background-image: url(IMG/aboutus.jpg);">
+                        <div class="content">
+                            <div class="des">This is</div>
+                            <div class="name">Athalia</div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(IMG/athalia.png);">
+                        <div class="content">
+                            <div class="name">Orestes</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(IMG/banner1.png);">
+                        <div class="content">
+                            <div class="name">Orestes</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(IMG/athalia.png);">
+                        <div class="content">
+                            <div class="name">Orestes</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="buttons">
+                    <button id="prev"><i class='bx bx-chevron-left'></i></button>
+                    <button id="next"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+            
+
+        </div>
+
+
+        <div class="right-pd">
+
+            <div class="product-name">The Athalia</div>
+            <br>
+            <div class="collection-name">The <i><b>2022</b></i> Collection</div>
+            <br>
+            <div class="price">Rp <div class="num">1.999.000</div></div>
+            <br>
+            <div class="line"></div>
+            <br>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <br>
+            <div class="details">
+                <ul>
+                    <li><i class='bx bxs-package'></i>200 grams</li>
+                    <li><i class='bx bx-water'></i>75 ml/bottle</li>
+                    <li><i class='bx bx-time-five'></i>Exp 12 mo</li>
+                    <li><i class='bx bx-fridge'></i>Store in cool area</li>
+                    <li><i class='bx bxs-vial'></i>Safe ingredients</li>
+                </ul>
+            </div>
+            <br>
+            <div class="qty">
+                <p>QUANTITY</p>
+                <div class="item-qty flex">
+                    <i class='bx bx-minus'></i>
+                    <div class="qty">0</div>
+                    <i class='bx bx-plus'></i>
+                </div>
+            </div>
+            <button class="add-cart-btn">ADD TO CART</button>
+        </div>
+
+
+
+    </div>
+    <div class="another"></div>
+
+</body>
+
+
+<script>
+    document.getElementById('next').onclick = function(){
+        let lists = document.querySelectorAll('.item');
+        document.getElementById('slide').appendChild(lists[0]);
+
+    }
+    document.getElementById('prev').onclick = function(){
+        let lists = document.querySelectorAll('.item');
+        document.getElementById('slide').prepend(lists[lists.length - 1]);
+        
+    }
+</script>
+
+
+
+</html>

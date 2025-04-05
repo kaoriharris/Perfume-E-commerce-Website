@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+body {
+    padding: 40px 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #000000;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: normal;
+    background-color: white;
+}
+
+.normalText{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.smallText{
+    font-size: 12px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-nav {
+    margin: 0 40px;
+}
+
+#part-count{
+font-weight: bold;
+    background-color: #c6c6c6;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+.quiz-container {
+    height: auto;
+    width: 100vw;
+    overflow-x: auto;
+    /* position: absolute; */
+}
+
+.questions{
+    display: flex;
+    overflow: auto;
+    /* position: relative; */
+    position: absolute;
+    /* left: -100px; */
+    scroll-behavior: smooth;
+    flex-direction: row;
+    --questNo: 2;
+    --initialWidth: calc(100vw * var(--questNo));
+    --scroll: 0;
+    /* width: calc(100vw * var(--questNo)); */
+    width: 100%;
+}
+
+
+
+.active .questions{
+    left: calc(var(--scroll) - 100vw);
+}
+
+.quiz-question{
+    width: 100vw;
+    padding: 0 10vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question {
+    margin: 8vh 0;
+    text-align: center;
+}
+
+.question-text {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.desc {
+    margin: 2vh;
+}
+
+.quiz-choices {
+    width: 80vw;
+}
+
+.quiz-choices li {
+    background-size: cover;
+}
+
+.choice {
+    width: 30vh;
+    height: 40vh;
+    padding: 30px;
+    background-size:contain;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.choice:hover {
+    background-size: 110%;
+}
+
+.quiz-footer {
+    position: sticky;
+    margin: 0 40px;
+    top: 90vh;
+}
+
+.quiz-footer a {
+    color: #000000;
+}

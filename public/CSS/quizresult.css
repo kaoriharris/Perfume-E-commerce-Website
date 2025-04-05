@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: normal;
+    background-color: white;
+    position: relative;
+    /* background-image: url("../IMG/bg.jpeg");
+    background-attachment: fixed;
+    background-size: center; */
+}
+
+
+nav {
+    width: 100%;
+    z-index: 999;
+}
+
+.top-ribbon {
+    z-index: 100;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgb(53, 51, 34);
+}
+
+.top-ribbon a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.navbar-small{
+    margin-bottom: -10px;
+    position: sticky;
+    top: -1px;
+    height: 90px;
+    background-color: #ffffff;
+    box-shadow: 0 0px 6px rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo-small-nav{
+    margin: auto;
+    /* padding: auto; */
+    height: 40px;
+    width: auto;
+    display: flex;
+    justify-content: center;     
+}
+
+.logoatas{
+    /* padding: auto; */
+    height: 40px;
+    width: auto;
+}
+
+.bckhomebtn{
+    margin: 20px 0 -20px 10px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-color: white;
+    border: none;
+}
+
+.cntushop{
+    margin: 20px 10px -20px 0;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-color: white;
+    border: none;
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+    gap: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.congrats {
+    font-size: 40px;
+    margin: 50px 0 20px 0;
+}
+
+.score {
+    color: #333;
+    font-size: 70px;
+}
+
+.product img {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 90px;
+    /* border: black solid 3px; */
+}
+
+p {
+    font-size: 17px;
+}
+
+.productname-qr {
+    color: rgb(206, 187, 80);
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+h4 {
+    font-weight: normal;
+    color: #888;
+    line-height: 1.5;
+}

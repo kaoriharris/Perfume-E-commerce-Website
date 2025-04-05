@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dès Vu</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/aboutUs.css">
+    <script src="./JS/script.js"></script>
+    <!-- connect to get icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- RIBBON -->
+        <nav class="top-ribbon">
+            <div><i>Haven't discovered your personal scent yet? <a href="#"><b>Take quiz</b></a></i></div>
+        </nav>
+
+        <!-- MAIN NAVBAR -->
+        <nav class="navbar flex">
+
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+                <ul>
+                    <li onclick=hideSidebar()> <a href="#"><i class='bx bx-x'></i></a> </li>
+                    <li> </li>
+                    <li> <a href="home.html" class="flex">HOME <i class='bx bx-chevron-right'></i> </a></li>
+                    <li> <a href="products.html" class="flex">SHOP <i class='bx bx-chevron-right'></i> </a></li>
+                    <li> <a href="#" class="flex">SEASONS<i class='bx bx-chevron-right'></i> </a></li>
+                    <li> <a href="#" class="flex">CATALOGUE BOOK <i class='bx bx-chevron-right'></i> </a></li>
+                </ul>
+            </div>
+
+            <!-- NAVBAR -->
+            <ul class="left-menu flex">
+                <li onclick=showSidebar()> <a href="#"><i class='bx bx-menu'></i></a> </li>
+            </ul>
+
+            <div class="logo">
+                <img src="/IMG/smallLogo.png">
+            </div>
+
+            <ul class="right-menu flex">
+                <li> <a href="#"><i class='bx bx-user'></i></a> </li>
+                <li onclick=showCart()>
+                    <a href="#" class="cart-logo">
+                        <i class='bx bx-cart'></i>
+                        <span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- OUR STORES -->
+        <div class="ourstores">
+            <h3>OUR STORES</h3>
+            <div class="location">
+                <div class="aboutUsSpace white x"></div>
+                <div class="aboutUsSpace brown y">
+                    <h5>Des Vu</h5>
+                    <h2>Store Place</h2>
+                    <p>Address jl. blablabla</p>
+                    <div class="hour">
+                        <p>Open Everyday</p>
+                        <p>12:00 - 21:00</p>
+                    </div>
+                    <button>View Map</button>
+                </div>
+            </div>
+            <div class="location">
+                <div class="aboutUsSpace brown x">
+                    <h5>Des Vu</h5>
+                    <h2>Store Place</h2>
+                    <p>Address jl. blablabla</p>
+                    <div class="hour">
+                        <p>Open Everyday</p>
+                        <p>12:00 - 21:00</p>
+                    </div>
+                    <button>View Map</button>
+                </div>
+                <div class="aboutUsSpace white y">
+                </div>
+            </div>
+            <div class="location">
+                <div class="aboutUsSpace white x"></div>
+                <div class="aboutUsSpace brown yx">
+                    <h5>Des Vu</h5>
+                    <h2>Store Place</h2>
+                    <p>Address jl. blablabla</p>
+                    <div class="hour">
+                        <p>Open Everyday</p>
+                        <p>12:00 - 21:00</p>
+                    </div>
+                    <button>View Map</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-container">
+
+                <!-- COLUMN 1 -->
+                <div class="logoSocials">
+                    <div class="cirlce-logo">
+                        <img src="IMG/circleLogo.png">
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+                
+                <!-- COLUMN 2 -->
+                <div class="footer-content">
+                    <h4>SERVICES</h4>
+                    <li><a href="#">Contact Mngmt.</a></li>
+                    <li><a href="#">Delivery service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="footer-content">
+                    <h4>SUPPORT US</h4>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Promote us</a></li>
+                    <li><a href="#">Ambassadors</a></li>
+                </div>
+                
+                <!-- COLUMN 4 -->
+                <div class="footer-content">
+                    <h4>HOUSE OF DES VU</h4>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </div>
+
+                <!-- COLUMN 5 -->
+                <div class="footer-content">
+                    <h3>Thank You</h3>
+                    <h3 id="secondLine">for having us,</h3>
+                    <h1 class="thankyou">Des Vu</h1>
+                </div>
+            </div>
+        
+            <!-- BOTTOM RIBBON -->
+            
+            <div class="bottom-ribbon">
+                <div class="line"></div>
+                <img src="IMG/bigLogo.png" class="bottomLogo">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
